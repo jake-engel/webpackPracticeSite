@@ -8,8 +8,7 @@
     "build": "set NODE_ENV=production npm run clean && webpack -p",
     "serve": "webpack-dev-server",
     "deploy": "npm run build && git subtree push --prefix build origin gh-pages",
-    "start": "node server.js",
-    "heroku-postbuild": "npm install && npm run build"
+    "start": "node server.js"
   },
   "repository": "https://github.com/StephenGrider/WebpackProject",
   "author": "",
