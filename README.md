@@ -10,3 +10,6 @@ git clone https://github.com/StephenGrider/WebpackProject.git
 cd WebpackProject
 npm install
 ```
+
+### Also to push to github pages. Use the following command 'npm run deploy'
+### Procfile is run automatically when deployed to heroku

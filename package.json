@@ -6,12 +6,14 @@
   "scripts": {
     "clean": "rimraf build",
     "build": "set NODE_ENV=production npm run clean && webpack -p",
-    "serve": "webpack-dev-server"
+    "serve": "webpack-dev-server",
+    "deploy": "npm run build && git subtree push --prefix build origin gh-pages"
   },
   "repository": "https://github.com/StephenGrider/WebpackProject",
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.3",
     "faker": "^3.1.0",
     "lodash": "^4.17.2",
     "react": "15.4.1",
@@ -33,6 +35,7 @@
     "rimraf": "^2.6.2",
     "style-loader": "^0.13.1",
     "webpack": "2.2.0-rc.0",
+    "webpack-dev-middleware": "^1.9.0",
     "webpack-dev-server": "^2.2.0-rc.0"
   }
 }
